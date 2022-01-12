@@ -5,6 +5,14 @@ import requests
 import daily
 import state
 import time
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 st.title("Corona Virus Dashboard")
 a=st.sidebar.radio("Types of Data : ",["Daily Corona cases Report Over World","Indian State Cases Details","Top World News of Corona Virus"])
 if(a=="Daily Corona cases Report Over World"):

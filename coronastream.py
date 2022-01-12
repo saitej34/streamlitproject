@@ -28,7 +28,7 @@ if(a=="Indian State Cases Details"):
     st.header("State Wise Corona Details")
     #stc = pd.read_excel('gst-state-code-list-excel.xlsx')
     #st.dataframe(stc)
-    st.image("states.py)
+    st.image("states.jpg")
     cod = st.text_input("Enter the State code: ")
     l,a,b,c,d,e,f,g=state.getState(cod)
     st.info("Data Fetched Successfully")

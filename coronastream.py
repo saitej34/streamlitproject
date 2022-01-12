@@ -26,8 +26,8 @@ if(a=="Daily Corona cases Report Over World"):
 if(a=="Indian State Cases Details"):
     st.write("Fetching Data using RapidApi")
     st.header("State Wise Corona Details")
-    stc = pd.read_excel('gst-state-code-list-excel.xlsx')
-    st.dataframe(stc)
+    #stc = pd.read_excel('gst-state-code-list-excel.xlsx')
+    #st.dataframe(stc)
     cod = st.text_input("Enter the State code: ")
     l,a,b,c,d,e,f,g=state.getState(cod)
     st.info("Data Fetched Successfully")
